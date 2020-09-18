@@ -14,7 +14,7 @@ namespace assignment1
             // assign a value to finish, so that when the program get this value it stops.
             FINISH = 0;
 
-            Console.WriteLine("This program continuously accepts dogs' data and displays billing data for each dog");
+            Console.WriteLine("This program continuously accepts dogs' data and displays billing data for each dog \n");
             Console.WriteLine("Enter the owner's ID number");
 
             // get the owner id from the user then convert it to an integer
@@ -96,12 +96,20 @@ namespace assignment1
 
             }
 
-            Console.WriteLine("No more data to be entered");
+            Console.WriteLine("\nNo more data to be entered");
 
 
         }
 
 
+        
+    
+    // functions  
+        
+        
+        
+        
+        
         // creating a function that calculate the fee
         public static int getCost(int numberOfWeeks, int price )
         {
@@ -114,13 +122,13 @@ namespace assignment1
         // this function display the bill data if the customer gets a discount.
         public static void discountedOutput(int ownerID, String dogName, String dogBreed, int age, int numberOfWeeks, double dogWeight, double discountedFee)
         {
-                Console.WriteLine($"Owner's ID number is {ownerID}");
+                Console.WriteLine($"\nOwner's ID number is {ownerID}");
                 Console.WriteLine($"The dog name is {dogName}");
                 Console.WriteLine($"Dog is a {dogBreed} breed");
                 Console.WriteLine($"The dog is {age} years old");
                 Console.WriteLine($"The dog will need {numberOfWeeks} weeek/s of care");
-                Console.WriteLine($"Dog weight is {dogWeight} lbs");
-                Console.WriteLine($"The Total day care fee is ${discountedFee}");
+                Console.WriteLine($"Dog weight is {dogWeight} lbs \n");
+                Console.WriteLine($"The Total day care fee is ${discountedFee} \n");
 
         }
 
@@ -143,13 +151,13 @@ namespace assignment1
         // this function display the bill data.
         public static void displayOutput(int ownerID, String dogName, String dogBreed, int age, int numberOfWeeks, double dogWeight, int fee)
         {
-                Console.WriteLine($"Owner's ID number is {ownerID}");
+                Console.WriteLine($"\nOwner's ID number is {ownerID}");
                 Console.WriteLine($"The dog name is {dogName}");
                 Console.WriteLine($"Dog is {dogBreed} breed");
                 Console.WriteLine($"The dog is {age} years old");
                 Console.WriteLine($"The dog will need {numberOfWeeks} weeek/s of care");
-                Console.WriteLine($"Dog weight is {dogWeight} lbs");
-                Console.WriteLine($"The total day care fee is ${fee}");
+                Console.WriteLine($"Dog weight is {dogWeight} lbs \n");
+                Console.WriteLine($"The total day care fee is ${fee} \n");
 
         }
         
@@ -160,7 +168,7 @@ namespace assignment1
             double discountedFee;
 
             if(fee > 125){
-                Console.WriteLine("2% discount will be applied to your overall bill");
+                Console.WriteLine("\n2% discount will be applied to your overall bill");
 
                 // get the discounted fee by calling the discountFee function
                 discountedFee = discountFee(fee);
